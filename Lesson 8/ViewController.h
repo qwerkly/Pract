@@ -7,9 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Animation.h"
+#import "IBDetailViewController.h"
+#import "IBCustomTableViewCell.h"
+#import "IBMakeArrays.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <UITableViewDelegate,UITableViewDataSource>
 
+@property (nonatomic,assign) BOOL isFirstArray;
+@property (nonatomic,strong) IBOutlet UITableView *tableView;
+@property(nonatomic,assign) BOOL isFirstButton;
 
 @end
 

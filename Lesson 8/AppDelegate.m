@@ -10,9 +10,6 @@
 
 @interface AppDelegate ()
 
-@property(nonatomic,strong) NSArray * arrayValue;
-@property(nonatomic,strong) NSArray * arrayPrice;
-@property(nonatomic,strong) NSMutableArray * arrayM;
 
 @end
 
@@ -20,16 +17,6 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    
-    NSString * stringValue = @"TV,car,phone";
-    NSString * stringPrice = @"1500,1000,789";
-    
-    self.arrayValue = [stringValue componentsSeparatedByString:@","];
-    self.arrayPrice = [stringPrice componentsSeparatedByString:@","];
-    
-    NSDictionary * dict = [[NSDictionary alloc]initWithObjects:self.arrayValue forKeys:self.arrayPrice];
-    
-    NSLog(@"%@",dict);
     
     return YES;
 }
